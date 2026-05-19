@@ -1,1 +1,7 @@
-# 0
+# 00.1. Package Installation
+#
+# *TCGAbiolinks*
+# An R/Bioconductor package for integrative analysis with TCGA data
+
+devtools::install_github("tecnomod-um/RBioGateway")
+library(RBioGateway)
