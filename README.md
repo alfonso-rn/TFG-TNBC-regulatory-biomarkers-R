@@ -28,7 +28,7 @@ The repository is organized as a sequential and reproducible set of numbered scr
 #### 00_Environment_configuration.R 
 Initializes the computational environment, installs and loads the required packages, and records the software versions used in the analysis. This file ensures that the workflow can be reproduced under a controlled R/Bioconductor setup before any data are queried or processed. 
 
-### 01_Identification_of_TNBC_patients_within_TCGA_BRCA.R
+#### 01_Identification_of_TNBC_patients_within_TCGA_BRCA.R
 Retrieves TCGA-BRCA clinical information and identifies TNBC patients according to ER, PR, and HER2 receptor status. This script defines the clinical TNBC cohort used throughout the project and compares it with available molecular subtype annotations, such as PAM50, to contextualize the selected samples within the broader heterogeneity of breast cancer.
 
 #### 02_Download_of_primary_BRCA_expression_data.R
