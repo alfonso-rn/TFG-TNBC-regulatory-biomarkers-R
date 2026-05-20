@@ -9,7 +9,7 @@ R workflow for analyzing TCGA-BRCA data to identify differentially expressed gen
 - [Workflow files](#Workflow-files)
   - [00_Environment_configuration.R](#00_Environment_configuration.R)
   - [01_Identification_of_TNBC_patients_within_TCGA_BRCA.R](#01_Identification_of_TNBC_patients_within_TCGA_BRCA.R)
-  - [02_Download_of_primary_BRCA_expression_data.R](#02_Download_of_primary_BRCA_expression_data.R)
+  - [02_Download_gene_expression_data_from_primary_TCGA_BRCA_tumors.R](#02_Download_gene_expression_data_from_primary_TCGA_BRCA_tumors.R)
   - [03_Preprocessing_normalization_and_group_definition.R](#03_Preprocessing_normalization_and_group_definition.R)
   - [04_Differential_expression_analysis.R](#04_Differential_expression_analysis.R)
   - [05_Survival_analysis_in_TNBC.R](#05_Survival_analysis_in_TNBC.R)
@@ -31,7 +31,7 @@ Initializes the computational environment, installs and loads the required packa
 #### 01_Identification_of_TNBC_patients_within_TCGA_BRCA.R
 Retrieves TCGA-BRCA clinical information and identifies TNBC patients according to ER, PR, and HER2 receptor status. This script defines the clinical TNBC cohort used throughout the project and compares it with available molecular subtype annotations, such as PAM50, to contextualize the selected samples within the broader heterogeneity of breast cancer.
 
-#### 02_Download_of_primary_BRCA_expression_data.R
+#### 02_Download_gene_expression_data_from_primary_TCGA_BRCA_tumors.R
 Queries and downloads harmonized RNA-seq gene expression data from primary breast tumor samples in the TCGA-BRCA project using TCGAbiolinks. This file establishes the transcriptomic dataset used for downstream comparisons between TNBC and non-TNBC tumors.
 
 #### 03_Preprocessing_normalization_and_group_definition.R
