@@ -34,4 +34,6 @@ devtools::install_github("tecnomod-um/RBioGateway")
 
 lapply(all_pkgs, library, character.only = TRUE)
 
-message("Environment successfully configured")
+# 0.4. Folder for saving results ----
+
+dir.create("results")
