@@ -12,7 +12,7 @@ R workflow for analyzing TCGA-BRCA data to identify differentially expressed gen
   - [02_Download_gene_expression_data_from_primary_TCGA_BRCA_tumors.R](#02_Download_gene_expression_data_from_primary_TCGA_BRCA_tumors.R)
   - [03_Preprocessing_normalization_and_group_definition.R](#03_Preprocessing_normalization_and_group_definition.R)
   - [04_Differential_expression_analysis.R](#04_Differential_expression_analysis.R)
-  - [05_Survival_analysis_in_TNBC.R](#05_Survival_analysis_in_TNBC.R)
+  - [05_Survival_analysis_within_TNBC.R](#05_Survival_analysis_within_TNBC.R)
   - [06_Somatic_mutation_analysis_and_filtering_of_truncating_variants.R](#06_Somatic_mutation_analysis_and_filtering_of_truncating_variants.R)
   - [07_Identification_of_regulatory_regions_affected_by_non_truncating_mutations.R](#07_Identification_of_regulatory_regions_affected_by_non_truncating_mutations.R)
   - [08_Identification_of_TFBS_affected_in_prioritized_regulatory_regions.R](#08_Identification_of_TFBS_affected_in_prioritized_regulatory_regions.R)
@@ -40,7 +40,7 @@ Performs preprocessing of the RNA-seq expression dataset, including sample filte
 #### 04_Differential_expression_analysis.R
 Carries out the differential expression analysis between TNBC and non-TNBC primary breast tumors. This script identifies genes whose expression differs significantly between both groups, applies statistical thresholds to classify relevant genes, and generates graphical summaries such as volcano plots. The resulting differentially expressed genes constitute the first set of candidates for downstream prognostic and regulatory analyses.
 
-#### 05_Survival_analysis_in_TNBC.R
+#### 05_Survival_analysis_within_TNBC.R
 Integrates gene expression data with clinical follow-up information from TNBC patients to evaluate the association between gene expression and survival. This script applies survival modelling approaches, including univariate Cox proportional hazards analysis and Kaplan-Meier visualization for prioritized genes. Its purpose is to identify differentially expressed genes with potential prognostic value in the TNBC cohort.
 
 #### 06_Somatic_mutation_analysis_and_filtering_of_truncating_variants.R
