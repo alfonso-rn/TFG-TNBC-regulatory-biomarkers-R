@@ -15,7 +15,7 @@ R workflow for analyzing TCGA-BRCA data to identify differentially expressed gen
   - [05_Survival_analysis_within_TNBC.R](#05_Survival_analysis_within_TNBC.R)
   - [06_Somatic_mutation_analysis_and_filtering_of_truncating_variants.R](#06_Somatic_mutation_analysis_and_filtering_of_truncating_variants.R)
   - [07_Identification_of_regulatory_regions_affected_by_non_truncating_mutations.R](#07_Identification_of_regulatory_regions_affected_by_non_truncating_mutations.R)
-  - [08_Identification_of_TFBS_affected_in_prioritized_regulatory_regions.R](#08_Identification_of_TFBS_affected_in_prioritized_regulatory_regions.R)
+  - [08_Identification_of_TF_associated_with_affected_CRMs.R](#08_Identification_of_TF_associated_with_affected_CRMs.R)
   - [09_GO_enrichment_of_identified_regulatory_regions.R](#09_GO_enrichment_of_identified_regulatory_regions.R)
 - [Current scope](#Current-scope)
 
@@ -49,7 +49,7 @@ Downloads and processes TCGA-BRCA masked somatic mutation data, focusing on muta
 #### 07_Identification_of_regulatory_regions_affected_by_non_truncating_mutations.R
 Transforms the prioritized non-truncating mutation set into genomic coordinates compatible with RBioGateway and searches for overlap with cis-regulatory modules. This script introduces the regulatory interpretation layer of the workflow by linking candidate TNBC-associated mutations to putative regulatory DNA regions catalogued in BioGateway.
 
-#### 08_Identification_of_TFBS_affected_in_prioritized_regulatory_regions.R
+#### 08_Identification_of_TF_associated_with_affected_CRMs.R
 Uses RBioGateway to retrieve transcription factors associated with the affected regulatory regions and summarizes mutation–CRM–transcription factor relationships. This stage prioritizes candidate regulatory events that may affect transcription factor binding and contribute to the dysregulation of survival-associated genes in TNBC.
 
 #### 09_GO_enrichment_of_identified_regulatory_regions.R
