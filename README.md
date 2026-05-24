@@ -1,4 +1,4 @@
-# Identification of regulatory regions with prognostic value in triple-negative breast cancer through bioinformatics analysis in R of data from the TCGABiolinks and RBioGateway packages
+# Bioinformatics integration of multi-omics data for the identification of potentially relevant genes and regulatory regions in triple-negative breast cancer
 
 ## Description
 R workflow for analyzing TCGA-BRCA data to identify differentially expressed genes, survival-associated biomarkers and affected regulatory regions in triple-negative breast cancer using TCGAbiolinks and RBioGateway.
